@@ -1,0 +1,218 @@
+:root{
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: #81b0b6;
+
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.logo1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Karla", sans-serif;
+    text-shadow: 0px 0px 10px white;
+    font-weight: 800;
+    color: #fff !important;
+  }
+  .hr2{
+    width: 25%;
+    margin: 0px auto 15px auto;
+    padding: 2px;
+    background: #1A374D;
+    border: none;
+  }
+.doc{
+    /* background: linear-gradient(rgba(212, 220, 233, 0.5), rgba(212, 220, 233, 0.5)); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
+    min-height: 100vh;
+    place-items: center;
+    border-radius: 10px;
+    line-height: 1.6;
+    padding-right: 9em;
+    padding-left: 9em;
+    margin-left: 34px;
+    margin-right: 34px;
+    margin-top: 55px;
+    font-size: 20px;
+}
+/* body{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    font-family: sans-serif;
+    /* background: var(--clr-neutral-900); */
+  /*  padding-right: 15em;
+} */
+.doc .card{
+    margin: 10px;
+}
+#d1{
+    
+    background: url(../images/doc-1.jpg);
+    
+}
+#d2{
+    
+    background-image: url(../images/doc-2.jpg);
+}
+#d3{
+    
+    background-image: url(../images/doc-4.jpg);
+}
+#d4{
+    
+    background-image: url(../images/doc-3.jpg);
+}
+#d5{
+    background-image: url(../images/doc-1.jpg);
+}
+#d6{
+    background-image: url(../images/doc-3.jpg);
+}
+
+ 
+.card{
+    
+    min-width: 25ch;
+    color: var(--clr-neutral-100);
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 25ch; /*35 characters wide*/
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    border: 0px solid !important;
+    
+}
+
+.card:hover,
+.card:focus-within{
+    transform: scale(1.05);
+}
+.card-detail{
+     color: rgb(255 255 255 / 0.85);
+}
+.card-content{
+    border-radius: 0.5rem;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.4) 20%,
+    hsl(0 0% 0% / 1));
+ 
+    
+}
+
+
+.card-title{
+    position: relative;
+    color: #ffffff;
+    
+    font-weight: 200;
+    width: max-content; /* max-width: 100% prevent overflow*/ 
+    /* outline: 1px solid red; */
+}
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    bottom: -2px;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+   
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after
+{
+    transform: scaleX(1);
+}
+@media(hover){
+    .card-content{
+        transform: translateY(65%);
+        transition: transform 500ms ease;
+    }
+
+    .card:hover .card-content,
+    .card:focus-within .card-content
+    {
+        transform: translateY(0);
+        transition-delay: 500ms;
+    }
+    .card:focus-within .card-content{
+        transition-duration: 0ms;
+    }
+    .card-content > *:not(.card-title){
+        opacity: 0;
+        transition: opacity 500ms linear;
+    }
+
+    .card:hover .card-content > *:not(.card-title),
+    .card:focus-within .card-content > *:not(.card-title){
+        opacity: 1;
+        transition-delay: 1000ms;
+    }
+    .card-title::after{
+        transform: scaleX(0);
+    }
+}
+
+a .fab, a .far {
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-decoration: none;
+    color: rgb(194, 249, 255);
+    cursor: pointer;
+    color: rgb(194, 249, 255);
+    display: inline-block;
+    
+    
+}
+
+.fab:hover,
+.fab:focus,.far:hover,
+.far:focus{
+    color: white;
+    font-size: large;
+}
+
+@media screen and (max-width: 1300px) {
+    .doc{
+        display: grid;
+        grid-template-columns: repeat(3,0.3fr);
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+        min-height: 120vh;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 50px;
+        padding-left: 100px;
+        padding-right: 0px;
+        
+    }
+    .card{
+        max-width: 25ch;
+        
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .doc{
+        display: grid;
+        grid-template-columns: repeat(2,0.3fr);
+        }
+    
+    }

@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #c3edef;
+  
+}
+.img{
+    /* float: right; */
+    width: 600px;
+    height: 600px;
+   padding-left: 12%;
+   margin-right: 40px;
+}
+body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://image.freepik.com/free-photo/medicine-capsules-global-health-with-geometric-pattern-digital-remix_53876-126742.jpg') !important;
+        background-attachment: fixed;
+        /* height: 100vh;
+        width: 100vw; */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+h1 {
+   
+  
+  text-align: center;
+  color: rgba(247, 253, 253, 0.8);
+  font-size: 3rem;
+  margin: auto;
+}
+hr {
+  width: 50%;
+  margin: 5px auto 15px auto;
+  padding: 2px;
+  background: #7C99AC;
+  border: none;
+}
+
+.wrapper {
+  box-shadow: 10px 10px 5px rgb(53, 53, 53);
+  background-color: hsla(201, 100%, 6%, 0.438);
+  width: 600px;
+  /* border-radius: 16px; */
+  z-index: 100;
+  /* border-radius: 16px; */
+  /* margin: auto; */
+  margin-top: 20px;
+  padding: 30px 45px 30px;
+  margin-bottom: 20px;
+}
+/* SIGN_UP*/
+
+.form {
+  padding: 25px 30px;
+}
+.form form {
+  margin: 20px 0;
+}
+.form form .error-text {
+  color: #721c24;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 10px;
+  display: none;
+}
+.form form .field {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form form .field i {
+  position: absolute;
+  right: 15px;
+  color: #c7ccd3;
+  top: 56%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form form .field i.active::before {
+  color: #333;
+  content: "\f070";
+}
+.form form .input input {
+  
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  border: 1px solid hsl(201, 100%, 6%);
+  color: white;
+  margin: 0 0 15px;
+  padding: 0px 10px;
+  border: none;
+  border-bottom: 3px solid #7C99AC;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form form .field input {
+  outline: none;
+}
+.form form .field label, .lbl{
+  margin-bottom: 2px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(247, 253, 253, 0.8);
+}
+.form form .name-details {
+  display: flex;
+  justify-content: space-between;
+}
+form .name-details .field:first-child {
+  margin-right: 5px;
+}
+form .name-details .field:last-child {
+  margin-left: 5px;
+}
+.field select{
+    width: 180px;
+}
+
+.form form .button input {
+  box-shadow: 0 0  5px rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  outline: 0;
+  width: 100%;
+  background: #7C99AC;
+  border: 3px solid #7C99AC;
+  height: 45px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 17px;
+  font-weight: 525;
+  transition: all 0.3s ease-in-out;
+}
+.form form .button input:hover,
+.form form .button input:active {
+  
+  background:#8fd2ffc0;
+  color: #fff;
+  transform: scaleX(1.01);
+  
+}
+select, option{
+  background-color: hsla(0, 0%, 0%, 0.3);
+  color: white;
+    
+}
+option{
+  background-color: white;
+   color: black;
+}
+.link {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+  color: rgba(247, 253, 253, 0.8);
+}
+.link a {
+  margin-left: 10px;
+  color: rgba(247, 253, 253, 0.8);
+  text-decoration: underline;
+ 
+}
+.link a:hover {
+  text-decoration: underline;
+
+}
+.lbl2{
+  margin-bottom: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center !important;
+  color: rgba(247, 253, 253, 0.8);
+}
+.per-details{
+    display: flex;
+    justify-content: space-between;
+}
+textarea{
+  background-color: hsla(201, 100%, 91%, 0.3);
+    width: 550px;
+    height: 100px;
+}
+.per-details .field:last-child {
+    margin-right: 35px;
+  }
+.per-details .gen {
+  color: rgba(247, 253, 253, 0.8);
+    box-sizing: border-box;
+    border:2px solid #7C99AC;
+    padding: 15px;
+    border-radius: 16px;
+    margin: 0 0 15px;
+}
+.per-details .gen input{
+    margin-left: 15px;
+}
+/* user area css */
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 90%;
+  }
+  .img{
+    display: none;
+}
+  form .name-details {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+  }
+  form .name-details .field:last-child {
+    margin-left: 0px;
+  }
+  form .name-details .field:first-child {
+    margin-right: 0px;
+  }
+  .form form .button {
+    width: 100%;
+  }
+  .form form .button input {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    word-wrap: inherit;
+  }
+}
+@media screen and (max-width: 417px) {
+  .link a {
+    margin-left: 10px;
+  }
+}
